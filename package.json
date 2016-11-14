@@ -18,5 +18,13 @@
     "glob": "^7.1.1",
     "mkdirp": "^0.5.1",
     "shelljs": "^0.7.5"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/domachine/penguin.js-core.git"
+  },
+  "bugs": {
+    "url": "https://github.com/domachine/penguin.js-core/issues"
+  },
+  "homepage": "https://github.com/domachine/penguin.js-core#readme"
 }
