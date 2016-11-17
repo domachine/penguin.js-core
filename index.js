@@ -39,8 +39,8 @@ function build ({
     const ids = yield database.getObjectIDs()
     yield Promise.all(website.languages.map(lang => {
       const langOutput = join(output, lang)
+      mkdir(langOutput)
       if (hasStatic) cp('-R', staticFiles, langOutput)
-      else mkdir(langOutput)
       Promise.all([
         Promise.all(files.map(co.wrap(function * (file) {
           const name = basename(file, '.html')
